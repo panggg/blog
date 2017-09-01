@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px #ccc solid;
+  height: 0.45rem;
+  background: #FFFFFF;
+  z-index: 9999;
+}
+footer ul{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li:nth-child(1){
+  border-right: 1px #ccc solid;
+}
+footer ul li{
+  text-align: center;
+  width: 50%;
+}
+footer ul li a{
+  display: inline-block;
+  width: 100%;
+  color: #888 !important;
+  font-size: 0.16rem;
+}
+footer li .tabActive{
+  color: #108ee9 !important;
+  transition: color 0.0001s;
+}

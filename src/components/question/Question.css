@@ -1,0 +1,117 @@
+body{
+  background: #fff;
+}
+.QuesMain{
+  background: white;
+  padding-top: 0.5rem;
+  width: 100%;
+  min-height: 4rem;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+.progressBar{
+	margin-left: 0.15rem;
+}
+.numRatio{
+	float: left;
+	font-size: 0.16rem;
+	color: #666;
+}
+.grayBar{
+	float: left;
+	width: 2.5rem;
+	height: 0.085rem;
+	background: #c9c9c9;
+	border-radius: 10px;
+	margin: 0.08rem 0.18rem;
+}
+.doingBar{
+	float: left;
+	width: 0;
+	height: 0.085rem;
+	background: #00b9fc;
+	border-radius: 10px;
+}
+.wn{
+	display: inline-block;
+  width: 0.325rem;
+  height: 0.18rem;
+  float: right;
+  margin-right: -0.18rem;
+  margin-top: -0.06rem;
+}
+
+.docker{
+  margin: 0.15rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.subject{
+  margin: 0.15rem;
+  border-radius: 6px;
+  display:none;
+}
+.subject:nth-child(1){
+    display: block;
+}
+.ques{
+	font-size: 0.17rem;
+	color: #666;
+	line-height: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.opc{
+	font-size: 0.15rem;
+	color: #666;
+	margin-top: 0.06rem;
+	line-height: 0.3rem;
+}
+.opc .opcDetail{
+  font-style: normal;
+}
+.upQues{
+	font-size: 0.15rem;
+  color: #00b9fc;
+  margin-left: 0.2rem;
+}
+.opc span{
+  width:0.175rem;
+  height:0.175rem;
+  line-height: 0.175rem;
+  text-align:center;
+  display:inline-block;
+  border:1px solid #00b9fc;
+  border-radius: 50%;
+  margin-right:0.08rem;
+  color:#00b9fc;
+}
+.opc span.blue{
+  background: #00b9fc;
+  color:#fff;
+}
+.blueWord{
+  color:#00b9fc;
+}
+.active{
+  background: #00b9fc;
+  color:#fff;
+}
+.nextStep{
+  height: 0.4rem;
+  font-size: 0.17rem;
+  background: #00b9fc;
+  color: #fff;
+  line-height: 0.4rem;
+  text-align: center;
+  border-radius: 8px;
+  width:3.45rem;
+  margin:0 auto;
+
+}
+.jump{
+	display:none;
+  height: 0.4rem;
+  margin: 0.3 auto;
+}

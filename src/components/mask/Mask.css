@@ -1,0 +1,48 @@
+.maskBox{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 99999;
+}
+.maskContent{
+  width: 2.55rem;
+  height: 3.55rem;
+  background: #fff;
+  border-radius: 0.2rem;
+}
+.maskContent>p:nth-child(1){
+  font-size: 0.15rem;
+  color: #333;
+  font-weight: bold;
+  padding: 0.3rem 0 0.1rem;
+}
+.maskContent>p:nth-child(2){
+  font-size: 0.12rem;
+  color: #666;
+}
+.maskContent>p:nth-child(3) img{
+  margin-top: 0.35rem;
+  width: 1.02rem;
+}
+.maskContent>div p{
+  width: 0.9rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  font-size: 0.16rem;
+  color: #fff;
+  background: #00b9fc;
+  border-radius: 0.08rem;
+  margin:0.35rem auto 0;
+}
+.hide{
+  display: none;
+}

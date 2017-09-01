@@ -1,0 +1,36 @@
+/* 弹框样式 */
+.titleBox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.15rem;
+  height: 0.15rem;
+}
+.titleBox .titleImg{
+  width: 0.15rem;
+  height: 0.15rem;
+  /* padding: 0.1rem; */
+  display: block;
+  background-size: 100%;
+  position: absolute;
+  top: 0.2rem;
+  right: 0rem;
+}
+.titleBoxWord{
+  width:2.465rem;
+  min-height:1.89rem;
+  position: absolute;
+  top:0;
+  right: 0.2rem;
+  background:url(../common/images/reportTitleBg.png) no-repeat;
+  background-size:100% 100%;
+  display: block;
+  padding:0.165rem;
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #505050;
+  line-height: 0.28rem;
+}
+.hide{
+  display: none;
+}

@@ -1,0 +1,26 @@
+body{
+  background: #ebebeb;
+  font-size: 0.14rem;
+}
+.card{
+  margin: 0.05rem 0.15rem 0;
+  background: #fff;
+  border-radius: 0.06rem;
+  overflow: hidden;
+}
+.card .title{
+  margin: 0 0.1rem;
+  border-bottom: 1px solid #ccc;
+  line-height: 0.53rem;
+  font-size: 0.14rem;
+  color: #666;
+  text-align: left;
+}
+.card .title img{
+  width: 0.17rem;
+  height: 0.17rem;
+  vertical-align: middle;
+  margin-right: 0.08rem;
+}
+
+

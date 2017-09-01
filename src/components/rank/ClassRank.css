@@ -1,0 +1,123 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+*{margin:0;padding:0}
+ul{
+  list-style:none;
+}
+.classRank{
+  width:100%;
+}
+/* 班级排名的表头部分 */
+.rankList{
+  width: 100%;
+  line-height: 0.5rem;
+  height:0.5rem;
+  padding-left: 0.08rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+}
+.rankList span{
+  font-size:0.15rem;
+  color:#333;
+  display:inline-block;
+  height:100%;
+  line-height: 0.5rem;
+}
+.rankList span:nth-child(1){
+  width:0.31rem;
+  float:left;
+}
+.rankList span:nth-child(2){
+  margin-left:0.72rem;
+  float:left;
+}
+.rankList span:nth-child(3){
+  width:0.65rem;
+  margin-right: 0.325rem;
+  float:right;
+}
+/* 班级排名的列表部分 */
+.classRank .rankListBox li{
+  overflow: hidden;
+  font-size:0.15rem;
+  line-height:0.57rem;
+  color:#666;
+  height:0.57rem;
+  padding-left:0.15rem;
+  box-sizing: border-box;
+  border-bottom:1px solid #f3f3f3;
+}
+.rankListBox li .rankNum{
+  width:0.25rem;
+  height:0.35rem;
+  text-align:center;
+  font-size:0.15rem;
+  float:left;
+}
+.rankListBox li:nth-child(1){
+  background:#e5f8ff;
+}
+.rankListBox li:nth-child(2) .rankNum span{
+  display: none;
+}
+.rankListBox li:nth-child(3) .rankNum span{
+  display: none;
+}
+.rankListBox li:nth-child(4) .rankNum span{
+  display: none;
+}
+/* 三个奖牌背景图 */
+.rankListBox li:nth-child(2) .rankNum{
+  background: url(../common/images/rank_frist.png) no-repeat;
+  background-size:100%;
+  margin-top:0.13rem;
+}
+.rankListBox li:nth-child(3) .rankNum{
+  background: url(../common/images/rank_second.png) no-repeat;
+  background-size:100%;
+  margin-top:0.13rem;
+}
+.rankListBox li:nth-child(4) .rankNum{
+  background: url(../common/images/rank_third.png) no-repeat;
+  background-size:100%;
+  margin-top:0.13rem;
+}
+/* 宝宝头像和名字 */
+.rankListBox li .babyName {
+  float: left;
+  font-size: 0.15rem;
+  margin-left: 0.4rem;
+}
+.rankListBox li .babyName  img{
+  width: 0.35rem;
+  height: 0.35rem;
+  display: block;
+  background-size: 100%;
+  float: left;
+  margin-top: 0.125rem;
+  margin-right: 0.1rem;
+}
+.rankListBox li .babyName  span{
+  float:left;
+  font-size:0.15rem;
+}
+/* 宝宝得分 */
+.rankListBox li .rankTotal{
+  width:0.65rem;
+  text-align:center;
+  float:right;
+  margin-right: 0.325rem;
+}
+.rankListBox li:nth-child(2) .rankTotal{
+  color:#00b9fc;
+}
+.rankListBox li:nth-child(3) .rankTotal{
+  color:#00b9fc;
+}
+.rankListBox li:nth-child(4) .rankTotal{
+  color:#00b9fc;
+}

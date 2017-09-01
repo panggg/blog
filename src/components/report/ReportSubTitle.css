@@ -1,0 +1,15 @@
+.subTitle{
+  font-size: 0.14rem;
+  color: #003859;
+  line-height: 0.2rem;
+  vertical-align: middle;
+  padding:0.11rem 0 0.16rem;
+  border-bottom: 1px dashed #CACFD4;
+}
+.subTitle img{
+  width: 0.15rem;
+  height: 0.19rem;
+  margin-right: 0.08rem;
+  vertical-align: middle;
+  display: inline-block !important;
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="x5-orientation" content="portrait">
+    <title></title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- <script>
+      let time = new Date().getTime();
+      let nonce = RandomString(24);
+      let sign_uri = window.location.href;
+      $.ajax({
+        method: 'GET',
+        url: 'http://wechat.aibao365.com/jsapi/signature/',
+        data: {
+          timestamp: time,
+          nonce: nonce,
+          sign_uri: sign_uri
+        },
+        success: function(data) {
+          if (data) {
+            weChatConfig(time, nonce, data);
+          }
+        },
+        error: function(err) {
+          console.log('apply signature error!');
+        }
+      })
+
+      function weChatConfig(wechatTime, wechatNonce, wechatSignature) {
+        // 微信配置
+        wx.config({
+          debug: false,
+          appId: 'wx45fe3f56828c0bdf',
+          timestamp: wechatTime,
+          nonceStr: wechatNonce,
+          signature: wechatSignature,
+          jsApiList: ['onMenuShareTimeline'] // 功能列表，我们要使用JS-SDK的什么功能
+        });
+      }
+
+      function RandomString(length) {
+        let str = '';
+        for (; str.length < length; str += Math.random().toString(36).substr(2));
+        return str.substr(0, length);
+      }
+
+    </script> -->
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+@mixin clearfix{
+  zoom: 1;
+  &:after{
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      font-size: 0;
+      overflow: hidden;
+  }
+}
+@mixin fl{
+  float:left;
+}
+@mixin fr{
+  float:right;
+}
+
+.pushCard{
+  width:3.45rem; // 690px
+  background-color: #eee;
+  margin:{
+    top:0;
+    right:auto;
+    bottom:.2rem; // 40px
+    left:auto;
+  }
+  .pushCardTitle{
+    @include clearfix;
+    height:.5rem; // 100px
+    line-height: .5rem; // 100px
+    .pushCardTitleTxt{
+      @include fl;
+      font:{
+        size:.14rem; // 28px
+        weight:bold;
+      }
+      margin:{
+        left:.105rem; // 21px
+      }
+      color:#333;
+    }
+    .pushCardTitleDate{
+      @include fr;
+      font:{
+        size:.12rem; // 24px
+      }
+      margin:{
+        right:.065rem; // 13px
+      }
+      color:#999;
+    }
+  }
+  .pushCardBody{
+    .pushCardBodyImg{
+      width:3.255rem; // 651px
+      height:1.82rem; // 364px
+      margin:{
+        top:0;
+        right:auto;
+        bottom:.19rem; // 38px
+        left:auto;
+      }
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+    .pushCardBodyTxt{
+      font:{
+        size:.13rem; // 26px
+      }
+      margin:{
+        left:.105rem; // 21px
+      }
+      padding:{
+        bottom:.105rem; // 21px
+      }
+      color:#666;
+    }
+  }
+}

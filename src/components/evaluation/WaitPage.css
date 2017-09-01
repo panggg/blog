@@ -1,0 +1,31 @@
+.main-wait{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: #F5F5F5;
+}
+.warp-wait{
+  width: 100%;
+  text-align: center;
+  padding-top: 30%;
+}
+.warp-wait img{
+  display: block;
+  width: 100%;
+}
+.warp-wait .img{
+  width: 1.43rem;
+  margin: 0 auto;
+  font-size: 0.12rem;
+}
+.warp-wait .title-1{
+  color: #666;
+  font-size: 0.15rem;
+  padding: 0.23rem 0;
+}
+.warp-wait .title-2 a{
+  color: #00b9fc;
+  font-size: 0.12rem;
+  text-decoration: underline;
+}

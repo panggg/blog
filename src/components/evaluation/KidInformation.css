@@ -1,0 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+.wraps{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url(../common/images/babyinfor_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 10;
+  overflow: auto;
+  padding-bottom: 0.6rem;
+}
+.wraps .logo{
+  width: 1.635rem;
+  height: 0.37rem;
+  background: url(../common/images/logo.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.17rem 0 0 0.15rem;
+}
+.babyImg{
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 5px #fff solid;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+}
+.wraps .babyImg img{
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+.wraps .babyName{
+  width: 0.8rem;
+  font-size:0.2rem;
+  color:#505050;
+  text-align:center;
+  margin: 0.125rem auto;
+}
+.wraps .babyName img{
+  display: block;
+  width: 100%;
+}
+.wraps .babyName span{
+  position: relative;
+}
+.wraps .babyName .sexImg{
+  position: absolute;
+  right: -22px;
+  bottom: 3px;
+  width: 0.15rem;
+}
+.wraps .help-tit{
+  font-size:0.125rem;
+  color:#c1c1c1;
+  text-align:center;
+}
+.wraps .title{
+  margin-top: 0.14rem;
+  height: 0.44rem;
+  background: #fff;
+  color: #ea552e;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.44rem;
+  letter-spacing: 4px;
+}
+.wraps table{
+  border-collapse: collapse;
+  font-size: 0.12rem;
+  margin: 0 auto;
+}
+.wraps table tr{
+  display: block;
+  margin-top: 0.1rem;
+}
+.wraps table tr td:nth-child(1){
+  width: 1rem;
+  text-align: right;
+  font-size:0.15rem;
+  color:#8c979c;
+}
+.wraps table tr td:nth-child(2){
+  width: 1rem;
+  font-size:0.15rem;
+  color:#525759;
+}
+.wraps table tr:nth-child(1){
+  margin-top: 0.3rem;
+}
+.wraps .linkReport{
+  margin-top: 0.25rem;
+  font-size:0.15rem;
+  color:#ea552e;
+  letter-spacing:1px;
+  text-align:center;
+  text-decoration: underline;
+  padding-bottom: 0.3rem;
+}
+.wraps .linkReport a{
+  margin-top: 0.25rem;
+  font-size:0.15rem;
+  color:#ea552e;
+  letter-spacing:1px;
+  text-align:center;
+  text-decoration: underline;
+}

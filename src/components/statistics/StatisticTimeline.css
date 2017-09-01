@@ -1,0 +1,78 @@
+.timeLineBox{
+  margin:0 0.15rem 0.1rem;
+  color: #666;
+}
+.timeLineBox .leftTime{
+  float: left;
+  width: 0.62rem;
+  margin-top: 0.15rem;
+  text-align: left;
+  font-size: 0.14rem;
+}
+.timeLineBox .rightList{
+  position: relative;
+  float: right;
+  padding-top: 0.08rem;
+  width: 2.5rem;
+  border-left: 2px solid #00B9FC;
+}
+.timeLineBox .rightList ul{
+  margin-left:0.06rem;
+}
+.timeLineBox .rightList li{
+  float: left;
+  width: 50%;
+  margin: 0.08rem 0 0.07rem;
+}
+.timeLineBox .rightList li img{
+  width: 0.18rem;
+  height: 0.18rem;
+}
+.timeLineBox .rightList li p{
+  display: inline-block;
+  position: relative;
+}
+.timeLineBox .rightList li i{
+  position: absolute;
+  top:-0.07rem;
+  right: -0.2rem;
+  width: 0.25rem;
+  height: 0.18rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.1rem;
+  background: red;
+  border-radius: 0.09rem;
+  color: #fff;
+
+}
+.timeLineBox .rightList li .cardName{
+  display: inline-block;
+  width: 0.44rem;
+  text-align: right;
+}
+.timeLineBox .rightList .bottomLine{
+  height: 1px;
+  width: 2.2rem;
+  margin-left:0.3rem;
+  background: #ccc;
+}
+.timeLineBox .rightList .circle{
+  position: absolute;
+  left: -0.1rem;
+  top:0.17rem;
+  width: 0.17rem;
+  height: 0.17rem;
+  border-radius: 50%;
+  background: #FDBF30;
+}
+.timeLineBox .bottomLine:last-child{
+  display: none;
+}
+
+
+
+
+
+

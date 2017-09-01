@@ -1,0 +1,40 @@
+.charge {
+  background-image: url(../common/images/charge_bg.png);
+  background-position: 1.025rem center;
+  background-repeat: no-repeat; }
+
+.timeline {
+  font-size: 0.12rem;
+  margin-left: .265rem;
+  margin-top: .2rem;
+  padding-top: .25rem; }
+  .timeline .item {
+    zoom: 1;
+    padding-bottom: .515rem; }
+    .timeline .item:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      font-size: 0;
+      overflow: hidden; }
+    .timeline .item .item-l {
+      float: left;
+      width: 1.025rem;
+      font-size: .12rem; }
+    .timeline .item .item-r {
+      float: left;
+      position: relative;
+      max-width: 2rem;
+      margin-left: .28rem;
+      font-size: .14rem; }
+      .timeline .item .item-r:before {
+        content: "";
+        position: absolute;
+        width: .14rem;
+        height: .14rem;
+        left: -.335rem;
+        top: 0;
+        background-image: url(../common/images/charge_point.png);
+        background-size: .14rem .14rem;
+        background-position: center center; }

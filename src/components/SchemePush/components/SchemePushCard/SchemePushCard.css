@@ -1,0 +1,44 @@
+.pushCard {
+  width: 3.45rem;
+  background-color: #eee;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: .2rem;
+  margin-left: auto; }
+  .pushCard .pushCardTitle {
+    zoom: 1;
+    height: .5rem;
+    line-height: .5rem; }
+    .pushCard .pushCardTitle:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      font-size: 0;
+      overflow: hidden; }
+    .pushCard .pushCardTitle .pushCardTitleTxt {
+      float: left;
+      font-size: .14rem;
+      font-weight: bold;
+      margin-left: .105rem;
+      color: #333; }
+    .pushCard .pushCardTitle .pushCardTitleDate {
+      float: right;
+      font-size: .12rem;
+      margin-right: .065rem;
+      color: #999; }
+  .pushCard .pushCardBody .pushCardBodyImg {
+    width: 3.255rem;
+    height: 1.82rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: .19rem;
+    margin-left: auto; }
+    .pushCard .pushCardBody .pushCardBodyImg img {
+      width: 100%;
+      height: 100%; }
+  .pushCard .pushCardBody .pushCardBodyTxt {
+    font-size: .13rem;
+    margin-left: .105rem;
+    padding-bottom: .105rem;
+    color: #666; }

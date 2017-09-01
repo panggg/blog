@@ -1,0 +1,87 @@
+*{margin:0;padding:0;}
+.PageObservation{
+  padding:0 0.23rem 0 0.3rem;
+}
+.AnalysisReportObservation{
+  border-top:1px dashed #cacfd4;
+  margin-top: 0.27rem;
+  padding-bottom:0.275rem;
+}
+.AnalysisObservationTitle{
+  font-size: 0.17rem;
+  margin-bottom: 0.165rem;
+  margin-top:0.105rem;
+}
+.AnalysisObservationContent{
+  font-size:0.13rem;
+  border-radius:0.15rem;
+  opacity:10%;
+  padding:0.135rem 0.115rem;
+}
+.AnalysisObservationContent p{
+  line-height: 0.28rem;
+  margin-bottom: 0.15rem;
+}
+
+/* 八个页面不同的颜色 */
+/* 语言 */
+.AnalysisObservationTitle-0{
+  color:#fdbf30;
+}
+.AnalysisObservationContent-0{
+  background:rgba(253,191,48,0.12);
+}
+/* 数理逻辑 */
+.AnalysisObservationTitle-1{
+  color:#67c9f8 ;
+}
+.AnalysisObservationContent-1{
+  background:rgba(103,201,248,0.12);
+}
+/* 大运动 */
+.AnalysisObservationTitle-2{
+  color:#92cf68 ;
+}
+.AnalysisObservationContent-2{
+  background:rgba(146,207,104,0.12);
+}
+/*  视觉空间*/
+.AnalysisObservationTitle-3{
+  color:#fa7475;
+}
+.AnalysisObservationContent-3{
+  background:rgba(250,116,117,0.12);
+}
+/* 音乐 */
+.AnalysisObservationTitle-4{
+  color:#cd9bf4;
+}
+.AnalysisObservationContent-4{
+  background:rgba(205,155,244,0.12);
+}
+/* 人际交往 */
+.AnalysisObservationTitle-5{
+  color:#cd9bf4;
+}
+.AnalysisObservationContent-5{
+  background:rgba(205,155,244,0.12);
+}
+/* 自然观察 */
+.AnalysisObservationTitle-6{
+  color:#fedd38;
+}
+.AnalysisObservationContent-6{
+  background:rgba(254,221,56,0.12);
+}
+/* 自我认知 */
+.AnalysisObservationTitle-7{
+  color:#f58857;
+}
+.AnalysisObservationContent-7{
+  background:rgba(245,136,87,0.12);
+}
+
+
+
+
+

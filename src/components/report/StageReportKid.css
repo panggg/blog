@@ -1,0 +1,64 @@
+.StageReportKidPage{
+  padding:0 0.28rem 0 0.46rem;
+}
+.LeiDaTitle{
+  font-family: PingFangSC-Regular;
+  font-size: 0.13rem;
+  color: #999999;
+  margin-top:0.075rem;
+  letter-spacing: -0.0.0041rem;
+}
+.abilityBox{
+  overflow: hidden;
+  font-size: 0.12rem;
+  line-height: 0.195rem;
+  margin-bottom: 0.2rem;
+}
+.abilityLeft{
+  color: #222222;
+  float:left;
+}
+.abilityRight{
+  float:left;
+  width:2.1rem;
+}
+.abilityRight div{
+  margin-left:0.105rem;
+  margin-bottom: 0.05rem;
+}
+.goodAbilityWord{
+  color:#ff6c00;
+}
+.badAbilityWord{
+  color:#12b7f5;
+}
+.abilityRight div span{
+  margin-right:0.17rem;
+}
+.abilityImgs{
+  overflow: hidden;
+  width:2.1rem;
+  margin-left: 0.105rem;
+}
+.abilityImgs li{
+  float:left;
+  width:25%;
+  height:0.42rem;
+}
+.abilityImgs li img{
+  /* width:0.34rem; */
+  height:100%;
+  display: block;
+  background-size: 100%;
+}
+.ReportGroupHighchart{
+  position: relative;
+  margin:0 auto;
+  padding-top:0.08rem;
+}
+.StageReportKidPage .highcharts-container{
+  width: 3rem;
+  margin:0 auto;
+  overflow: hidden;
+  height:2.5rem !important;
+}

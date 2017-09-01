@@ -1,0 +1,23 @@
+.am-tabs-bar .am-tabs-tab{
+  height: auto;
+  border-bottom: none;
+}
+.am-tabs-ink-bar{
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  background-color: #fff;
+}
+.am-tabs-bar .am-tabs-tab-active .div{
+  position: relative;
+}
+.am-tabs-bar .am-tabs-tab-active .div:before{
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: red;
+}

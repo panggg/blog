@@ -1,0 +1,26 @@
+.reportInfor li{
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  border-bottom: 1px solid #CACFD4;
+}
+.reportInfor li:nth-child(1){
+  border-right: 1px solid #CACFD4;
+}
+.reportInfor li p{
+  color: #505050;
+  font-size: 0.14rem;
+  padding-top: 0.12rem;
+  padding-left: 0.23rem;
+}
+.reportInfor li h3{
+  padding-left: 0.23rem;
+  color: #12B7F5;
+  font-size: 0.19rem;
+  font-weight: normal;
+  line-height: 0.26rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.1rem;
+}
+
+

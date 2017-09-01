@@ -1,0 +1,13 @@
+.PhysiologyPage{
+  padding:0 0.23rem 0.52rem 0.3rem;
+}
+.PhysiologyBox{
+  font-size:0.14rem;
+  line-height: 0.29rem;
+  color:#575757;
+  margin-top:0.18rem;
+}
+.PhysiologyBox .PhysiologyWord{
+  color:#12b7f5;
+}
+

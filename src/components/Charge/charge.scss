@@ -1,0 +1,75 @@
+@mixin clearfix{
+  zoom: 1;
+  &:after{
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      font-size: 0;
+      overflow: hidden;
+  }
+}
+@mixin fl{
+  float:left;
+}
+@mixin fr{
+  float:right;
+}
+
+
+.charge{
+  background: {
+    image: url(../common/images/charge_bg.png);
+    position:1.025rem center; // 205px ;
+    repeat:no-repeat;
+  }
+}
+.timeline{
+  font:{
+    size:0.12rem;
+  }
+  margin:{
+    left:.265rem; // 53px
+    top:.2rem; // 40px
+  }
+  padding:{
+    top:.25rem; // 50px
+  }
+  .item{
+    @include clearfix;
+    padding:{
+      bottom:.515rem; // 103px
+    }
+    .item-l{
+      @include fl;
+      width:1.025rem; // 205px
+      font:{
+        size:.12rem; // 24px
+      }
+    }
+    .item-r{
+      @include fl;
+      position: relative;
+      max-width: 2rem; // 400px
+      margin:{
+        left:.28rem; // 56px
+      }
+      font:{
+        size:.14rem; // 28px
+      }
+      &:before{
+        content:"";
+        position: absolute;
+        width:.14rem; // 28px
+        height:.14rem; // 28px
+        left:-.335rem; // 67px
+        top:0;
+        background: {
+          image:url(../common/images/charge_point.png);
+          size:.14rem .14rem; // 28px
+          position:center center;
+        }
+      }
+    }
+  }
+}

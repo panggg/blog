@@ -1,0 +1,19 @@
+.main{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: #F5F5F5;
+  overflow: auto;
+}
+.warp{
+  width: 2.65rem;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  padding-bottom: 1rem;
+}
+.warp img{
+  display: block;
+  width: 100%;
+}

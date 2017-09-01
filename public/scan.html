@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="x5-orientation" content="portrait">
+    <title>扫一扫</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script type="text/javascript">
+
+  var time = new Date().getTime();
+  var nonce = RandomString(24);
+  var sign_uri = window.location.href;
+
+  console.log(time)
+  console.log(nonce)
+   $.ajax({
+      method:'GET',
+      url:'http://wechat.aibao365.com/jsapi/signature/',
+      data:{
+        timestamp:time,
+        nonce:nonce,
+        sign_uri:sign_uri
+      },
+      success:function(data){
+        if(data){
+          weChatConfig(time,nonce,data);
+        }
+      },
+      error:function(err){
+        console.log('apply signature error!');
+      }
+    })
+
+  function weChatConfig(wechatTime,wechatNonce,wechatSignature){
+    // 微信配置
+    console.log(wechatTime)
+    console.log(wechatNonce)
+    console.log(wechatSignature)
+    wx.config({
+      debug: false,
+      appId: 'wx45fe3f56828c0bdf',
+      timestamp: wechatTime,
+      nonceStr: wechatNonce,
+      signature: wechatSignature,
+      jsApiList: ['scanQRCode'] // 功能列表，我们要使用JS-SDK的什么功能
+    });
+    // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在 页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready 函数中。
+    wx.ready(function(){
+      wx.scanQRCode({
+          needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+          scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+          success: function (res) {
+            var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+          },
+          cancel:function(){
+            wx.closeWindow();
+          }
+      });
+    });
+  }
+  function RandomString(length) {
+    var str = '';
+    for ( ; str.length < length; str += Math.random().toString(36).substr(2) );
+    return str.substr(0, length);
+  }
+
+  pushHistory();
+  window.addEventListener("popstate", function(e) {
+      wx.closeWindow();
+  }, false);
+  function pushHistory() {
+      var state = {
+          title: "title",
+          url: "#"
+      };
+      window.history.pushState(state, "title", "#");
+  }
+  </script>
+</head>
+<body>
+
+</body>
+</html>
